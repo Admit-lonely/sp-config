@@ -6,7 +6,7 @@ spring:
       override-none: true
        
 server:
-  port: 8201
+  port: 8101
   
 eureka:
   client:
@@ -22,3 +22,9 @@ management:
     web:
       exposure:
         include: hystrix.stream
+        
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
